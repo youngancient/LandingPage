@@ -51,7 +51,8 @@ header {
   align-items: center;
   padding: 10px;
 }
-header img, .footer-logo img {
+header img,
+.footer-logo img {
   width: 120px;
   height: 20px;
 }
@@ -91,13 +92,15 @@ header button {
 header button:hover {
   background: hsl(0, 4%, 90%);
 }
-.story button , .cta button{
+.story button,
+.cta button {
   background: hsl(322, 100%, 66%);
   width: 150px;
   color: hsl(193, 100%, 96%);
   box-shadow: 1px 4px 3px hsl(322, 60%, 33%);
 }
-.story button:hover, .cta button:hover {
+.story button:hover,
+.cta button:hover {
   background: hsl(322, 84%, 58%);
 }
 .margin {
@@ -106,7 +109,8 @@ header button:hover {
 .margin p {
   margin-top: 10px;
 }
-.margin button, .cta button {
+.margin button,
+.cta button {
   margin-top: 20px;
 }
 .cards-container {
@@ -154,21 +158,23 @@ header button:hover {
   width: 250px;
   height: 200px;
 }
-.cta{
+.cta {
   padding: 20px;
   width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 5px;
   border-radius: 8px;
+  background: hsl(0, 0%, 100%);
   box-shadow: 2px 1px 3px 3px hsl(194, 20%, 78%);
+  transform: translate(0%,50%);
 }
-.cta h3{
+.cta h3 {
   font-size: 16px;
 }
-footer{
+footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,21 +182,81 @@ footer{
   background: hsl(192, 100%, 9%);
   color: hsl(0, 0%, 100%);
   width: 100vw;
-  padding: 20px;
+  padding: 70px 10px 40px 10px;
 }
-footer i{
+footer i {
   color: hsl(0, 0%, 100%);
 }
-footer .padded-div{
+.fourth i {
+  width: 100%;
+}
+.first i {
+  margin-top: 2px;
+}
+footer .padded-div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+footer .first {
   display: flex;
   flex-direction: column;
 }
-footer .first{
+.first div {
+  display: flex;
+  padding: 5px;
+}
+.first div p {
+  margin-left: 10px;
+  font-size: 16px;
+}
+.sec,
+.third {
   display: flex;
   flex-direction: column;
 }
-.first div{
+.second {
+  margin-top: 10px;
+}
+.links a {
+  text-decoration: none;
+  outline: 0;
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 5px;
+}
+.fourth {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+}
+footer .fourth a:hover {
+  border: 1px solid hsl(322, 100%, 66%);
+}
+i:hover {
+  color: hsl(322, 100%, 66%);
+}
+.fourth a {
+  height: 30px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.fourth #twit,
+.fourth #inst {
+  margin-left: 10px;
+}
+.credits {
+  padding: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
 }
 @media screen and (min-width: 728px) {
   .hero {
@@ -286,75 +352,78 @@ footer .first{
     align-items: center;
     padding: 20px;
   }
-  .desc-img img{
+  .desc-img img {
     width: 320px;
     height: 280px;
   }
-  .cta{
+  .cta {
     padding: 30px;
     width: 500px;
     margin-top: 10px;
     border-radius: 8px;
-    transform: translate(0%,95%);
+    transform: translate(0%, 95%);
     background: hsl(0, 0%, 100%);
     z-index: 10;
     margin-top: 10px;
   }
-  .cta h3{
+  .cta h3 {
     font-size: 20px;
   }
-  footer .padded-div{
+  footer .padded-div {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     padding: 80px;
     font-family: "Open Sans", sans-serif;
   }
-  footer p{
+  footer p {
     font-size: 13px;
   }
-  .padded-div .first{
+  .padded-div .first {
     padding: 10px;
   }
-  .first div{
+  .first div {
     margin-top: 15px;
     padding: 2px;
   }
-  .first div p{
+  .first div p {
     margin-left: 10px;
+    font-size: 13px;
   }
-  .second{
+  .second {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 0px;
   }
-  .sec{
+  .sec,
+  .third {
+    padding: 0;
+  }
+  .sec {
     display: flex;
     justify-content: center;
   }
-   .third{
+  .third {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .links a{
+  .links a {
     text-decoration: none;
     outline: 0;
     color: hsl(0, 0%, 100%);
     font-size: 13px;
     padding: 5px;
+    margin-top: 0;
   }
-  .links a:hover{
+  .links a:hover {
     text-decoration: underline solid hsl(0, 0%, 100%);
   }
-  .links{
+  .links {
     display: flex;
     flex-direction: column;
   }
-  .fourth{
-    display: flex;
-    flex-direction: row;
-  }
-  .fourth a{
+  .fourth a {
     height: 30px;
     padding: 8px;
     display: flex;
@@ -365,14 +434,11 @@ footer .first{
     border: 1px solid hsl(0, 0%, 100%);
     text-decoration: none;
   }
-  .fourth a:hover{
-    color: hsl(322, 100%, 66%);
-    border: 1px solid hsl(322, 100%, 66%);
-  }
-  .fourth #twit, .fourth #inst {
+  .fourth #twit,
+  .fourth #inst {
     margin-left: 10px;
   }
-  .credits{
+  .credits {
     padding: 20px;
     font-family: "Open Sans", sans-serif;
   }
