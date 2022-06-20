@@ -258,6 +258,11 @@ i:hover {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
 }
+@media screen and (max-width:370px) {
+  .cta h3{
+    font-size: 15px;
+  }
+}
 @media screen and (min-width: 728px) {
   .hero {
     background: url(./images/bg-hero-desktop.svg) hsl(193, 100%, 96%);
