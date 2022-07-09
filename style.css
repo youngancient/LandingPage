@@ -140,7 +140,7 @@ header button:hover {
   border-radius: 8px;
   box-shadow: 2px 1px 4px 4px hsl(194, 20%, 78%);
   transform: translateX(200%);
-  transition: transform 0.3s ease-in;
+  transition: transform 0.2s ease-in;
 }
 .show{
   transform: translateX(0);
